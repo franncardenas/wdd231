@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: #2a71a3;
+    --secondary-color: #00509d;
+    --accent-color: #4dabf7;
+    --white: white;
+    --black: black;
+
+    --header-font: "Poppins";
+    --paragraph-font: "Gowun Batang";
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#headshot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--black);
+    font-family: var(--header-font);
+}
+
+#headshot img {
+    width: 100px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px var(--black);
+}
+
+#headshot h1 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.wayfinder {
+    display: none;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: var(--main-color);
+    align-items: center;
+    font-family: var(--header-font);
+}
+
+.header-nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    color: var(--black);
+}
+
+.header-nav a:hover {
+    font-weight: bolder;
+}
+
+.header-nav .active {
+    text-decoration: underline;
+    font-size: 2.0em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.home-page-section {
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    height: 400px;
+    margin: 20px;
+}
+
+.section-title {
+    background-color: var(--accent-color);
+    height: 35px;
+    align-content: start;
+    padding-bottom: 25px;
+    text-align: center;
+    width: 100%;
+    font-family: var(--header-font);
+}
+
+#course-work ul {
+    line-height: 2;
+}
+
+#location {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#location img {
+    width: 90%;
+}
+
+#education-plan {
+    width: 95%;
+    grid-column: 1/3;
+    height: auto;
+    font-size: .7em;
+}
+
+button {
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    font-family: var(--paragraph-font);
+}
+
+#course-categories {
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--black);
+}
+
+#course-categories button {
+    width: 20%;
+    height: 50px;
+    margin: 10px;
+}
+
+#course-tabs {
+    display: inline;
+}
+
+#course-tabs button {
+    width: 30%;
+    margin: 1%;
+    height: 60px;
+    background-color: var(--white);
+}
+
+#course-tabs .done {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: var(--accent-color);
+    height: 100px;
+    text-align: center;
+    align-content: center;
+    font-family: var(--header-font);
+}
+
+@media screen and (max-width:700px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wayfinder {
+        display: block;
+        font-size: 2.5rem;
+        background: none;
+        border: none;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-nav.show {
+        display: flex;
+    }
+
+    #course-work {
+        width: 100%;
+    }
+
+    #course-tabs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #course-tabs button {
+        width: 100%;
+    }
+}
