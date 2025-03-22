@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory Page</title>
+    <meta name="description" content="this is the home page for the course website">
+    <meta name="author" content="Franco Cardenas">
+
+    <meta property="og:title" content="Personal Course Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/catedral_laplata.jpg">
+    <meta property="og:url" content="https://franncardenas.github.io/wdd231/">
+
+    <meta name="twitter:title" content="Personal Course Home Page">
+    <meta name="twitter:description" content="Student portal for completed and in progress courses">
+    <meta name="twitter:image" content="./images/catedral_laplata.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="./images/football_ball.ico">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="./styles/chamber.css">
+
+    <script src="./scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-info">
+            <img src="./images/football_ball.ico" alt="Fairview Chamber of Commerce logo">
+            <div class="header-title">
+                <h1>Fairview</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+        </div>
+        <div class="header-nav">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./directory.html">Directory</a>
+                <a href="./join.html">Join</a>
+                <a href="./discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="button-container">
+            <button class="view-toggle-button" id="grid-view">GRID</button>
+            <button class="view-toggle-button" id="list-view">LIST</button>
+        </div>
+        <section class="member-cards grid-view">
+            <div class="card">
+                <img class="company-logo" src="#" alt="company image">
+                <p class="company-name">company name</p>
+                <p class="address">1122 Booger Booger Ave</p>
+                <p class="phone-number">555-555-5555</p>
+                <a class="company-page" href="#">theirSite.com</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="chamber-info">
+            <h2>Fairview Chamber of Commerce</h2>
+            <p>14405 CR 355</p>
+            <p>Fairview, MT</p>
+            <p>FairviewChamber/gmail/org</p>
+            <p>555-555-5555</p>
+        </div>
+        <div class="socials">
+            <p>Stay tuned for Social Media updates!</p>
+        </div>
+        <div class="personal-info">
+            <h2>WDD231 Project</h2>
+            <p>Franco Cardenas</p>
+            <p>&copy;<span id="currentyear"></span> Franco Cardenas, Argentina</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

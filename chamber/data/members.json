@@ -1,0 +1,60 @@
+{
+    "companies": {
+        "YPF": {
+            "address": "Av. Pres. Roque Sáenz Peña 777, Buenos Aires",
+            "phoneNumber": "+54 11 5441-1111",
+            "website": "https://www.ypf.com",
+            "imageFileName": "https://logo.clearbit.com/ypf.com",
+            "membershipLevel": 3
+        },
+        "Arcor": {
+            "address": "Av. Fulvio S. Pagani 487, Arroyito, Córdoba",
+            "phoneNumber": "+54 3576 420-300",
+            "website": "https://www.arcor.com",
+            "imageFileName": "https://logo.clearbit.com/arcor.com",
+            "membershipLevel": 2
+        },
+        "Banco Nación": {
+            "address": "Bartolomé Mitre 326, CABA",
+            "phoneNumber": "+54 11 4347-1111",
+            "website": "https://www.bna.com.ar",
+            "imageFileName": "https://logo.clearbit.com/bna.com.ar",
+            "membershipLevel": 3
+        },
+        "La Serenísima": {
+            "address": "Acceso Oeste km 59, Gral. Rodríguez, Buenos Aires",
+            "phoneNumber": "+54 237 485-2000",
+            "website": "https://www.laserenisima.com.ar",
+            "imageFileName": "https://logo.clearbit.com/laserenisima.com.ar",
+            "membershipLevel": 1
+        },
+        "Mercado Libre": {
+            "address": "Arias 3751, Buenos Aires",
+            "phoneNumber": "+54 11 4640-8000",
+            "website": "https://www.mercadolibre.com.ar",
+            "imageFileName": "https://logo.clearbit.com/mercadolibre.com.ar",
+            "membershipLevel": 2
+        },
+        "Quilmes": {
+            "address": "Av. Hipólito Yrigoyen 4077, Quilmes, Buenos Aires",
+            "phoneNumber": "+54 11 4251-1111",
+            "website": "https://www.cerveceriaymalteriaquilmes.com",
+            "imageFileName": "https://logo.clearbit.com/cerveceriaymalteriaquilmes.com",
+            "membershipLevel": 1
+        },
+        "Telecom Argentina": {
+            "address": "Av. Alicia Moreau de Justo 50, CABA",
+            "phoneNumber": "+54 11 4968-4000",
+            "website": "https://www.telecom.com.ar",
+            "imageFileName": "https://logo.clearbit.com/telecom.com.ar",
+            "membershipLevel": 2
+        },
+        "Aerolineas Argentinas": {
+            "address": "Av. Rafael Obligado S/N, CABA",
+            "phoneNumber": "+54 11 4310-7000",
+            "website": "https://www.aerolineas.com.ar",
+            "imageFileName": "https://logo.clearbit.com/aerolineas.com.ar",
+            "membershipLevel": 3
+        }
+    }
+}
