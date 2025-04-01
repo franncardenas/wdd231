@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buenos Aires Chamber of Commerce Home Page</title>
+
+    <meta name="description" content="this is the home page for the course website">
+    <meta name="author" content="Franco Cardenas">
+
+    <meta property="og:title" content="Buenos Aires Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/catedral_laplata.jpg">
+    <meta property="og:url" content="https://franncardenas.github.io/wdd231/">
+
+    <meta name="twitter:title" content="Buenos Aires Chamber of Commerce Home Page">
+    <meta name="twitter:description" content="Main Page for Buenos Aires Chamber of Commerce">
+    <meta name="twitter:image" content="./images/catedral_laplata.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="./images/football_ball.ico">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/form.css">
+
+    <script type="module" src="./scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-info">
+            <img src="./images/football_ball.ico" alt="Buenos Aires Chamber of Commerce logo">
+            <div class="header-title">
+                <h1>Fairview</h1>
+                <h2>Buenos Aires Chamber of Commerce</h2>
+            </div>
+        </div>
+        <div class="header-nav">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./directory.html">Directory</a>
+                <a href="./join.html">Join</a>
+                <a href="./discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="form-section">
+            <form id="membership-form" action="./thankyou.html" method="get">
+                <fieldset>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" autocomplete="given-name" required name="first-name"
+                        title="Please enter your first name.">
+                </fieldset>
+
+                <fieldset>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" autocomplete="family-name" required name="last-name"
+                        title="Please enter your last name.">
+                </fieldset>
+
+                <fieldset>
+                    <label for="organizational-title">Organizational Title</label>
+                    <input type="text" id="organizational-title" required name="organizational-title"
+                        pattern="[A-Za-z\s-]{7,}" title="Please enter your title in your organization."
+                        autocomplete="organization-title">
+                </fieldset>
+
+                <fieldset>
+                    <label for="email-address">Email Address</label>
+                    <input type="email" id="email-address" required name="email-address"
+                        title="Please enter a valid email." autocomplete="email" placeholder="youremail@gmail.com">
+                </fieldset>
+
+                <fieldset>
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" required name="phone-number"
+                        title="Please enter your phone number." autocomplete="tel">
+                </fieldset>
+
+                <fieldset>
+                    <label for="business-name">Business/Organization Name</label>
+                    <input type="text" id="business-name" required name="business-name"
+                        title="Please enter the name of your business." autocomplete="organization">
+                </fieldset>
+
+                <fieldset>
+                    <label for="membership-level">Membership Level</label>
+                    <select name="membership-level" id="membership-level">
+                        <option value="non-profit">NP Membership (Non-Profit Only)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <label for="business-description">Description</label>
+                    <textarea id="business-description" name="business-description"
+                        title="Enter a description about your business."></textarea>
+                </fieldset>
+
+                <input id="timestamp" type="hidden" name="timestamp">
+
+                <button type="submit">Join!</button>
+            </form>
+        </section>
+        <section id="card-section">
+            <div class="membership-card" id="np-membership">
+                <h3>Non-Profit Membership</h3>
+            </div>
+            <div class="membership-card" id="bronze-membership">
+                <h3>Bronze Membership</h3>
+            </div>
+            <div class="membership-card" id="silver-membership">
+                <h3>Silver Membership</h3>
+            </div>
+            <div class="membership-card" id="gold-membership">
+                <h3>Gold Membership</h3>
+            </div>
+        </section>
+    </main>
+    <div id="np-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-close="np-modal">&times;</span>
+            <h2>Non-Profit Membership</h2>
+            <p>This membership is free for non-profit organizations and includes access to our resources and networking
+                events.</p>
+        </div>
+    </div>
+    <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-close="bronze-modal">&times;</span>
+            <h2>Bronze Membership</h2>
+            <p>The Bronze Membership costs $100 annually and includes access to networking events and basic support.</p>
+        </div>
+    </div>
+    <div id="silver-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-close="silver-modal">&times;</span>
+            <h2>Silver Membership</h2>
+            <p>The Silver Membership costs $250 annually and includes additional marketing opportunities and priority
+                event access.</p>
+        </div>
+    </div>
+    <div id="gold-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" data-close="gold-modal">&times;</span>
+            <h2>Gold Membership</h2>
+            <p>The Gold Membership costs $500 annually and provides VIP access to all events and one-on-one business
+                consulting services.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="chamber-info">
+            <h2>Buenos Aires Chamber of Commerce</h2>
+            <p>14405 CR 355</p>
+            <p>Buenos Aires, Argentina</p>
+            <p>Buenos AiresChamber/gmail/org</p>
+            <p>555-555-5555</p>
+        </div>
+        <div class="socials">
+            <p>Stay tuned for Social Media updates!</p>
+        </div>
+        <div class="personal-info">
+            <h2>WDD231 Project</h2>
+            <p>Franco Cardenas</p>
+            <p>&copy;<span id="currentyear"></span> Franco Cardenas, Argentina</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
