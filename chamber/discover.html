@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buenos Aires Chamber of Commerce Home Page</title>
+
+    <meta name="description" content="this is the home page for the course website">
+    <meta name="author" content="Franco Cardenas">
+
+    <meta property="og:title" content="Buenos Aires Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/catedral_laplata.jpg">
+    <meta property="og:url" content="https://franncardenas.github.io/wdd231/">
+
+    <meta name="twitter:title" content="Buenos Aires Chamber of Commerce Home Page">
+    <meta name="twitter:description" content="Main Page for Buenos Aires Chamber of Commerce">
+    <meta name="twitter:image" content="./images/catedral_laplata.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="./images/football_ball.ico">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./scripts/discover.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-info">
+            <img src="./images/football_ball.ico" alt="Buenos Aires Chamber of Commerce logo">
+            <div class="header-title">
+                <h1>Buenos Aires Chamber of Commerce</h1>
+            </div>
+        </div>
+        <div class="header-nav">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./directory.html">Directory</a>
+                <a href="./join.html">Join</a>
+                <a href="./discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+    <main class="discover-content">
+        <div id="popup" class="popup hidden">
+            <div class="popup-content">
+                <span class="close" id="close-popup">&times;</span>
+                <p id="popup-message"></p>
+            </div>
+        </div>
+        <section class="sidebar">
+            <div id="events">
+                <h2>Local Events</h2>
+                <ul>
+                    <li>Old Timer's Festival</li>
+                    <li>Service Project at the Bridge</li>
+                    <li>Junior Class Greatest Race</li>
+                </ul>
+            </div>
+            <div id="calendar"></div>
+            <div id="activities">
+                <h2>Local Activities</h2>
+                <ul>
+                    <li>Senior Center Bingo</li>
+                    <li>Junior High Basketball</li>
+                    <li>Elizabeth's Dance Expressions Registration</li>
+                </ul>
+            </div>
+            <div id="data">
+                <h2>Membership Data</h2>
+                <canvas id="myChart"></canvas>
+            </div>
+            <div id="fundraiser">
+                <h2>Fundraiser Progress</h2>
+                <div id="fundraiser-bar">
+                    <div id="progress-bar"></div>
+                </div>
+                <p id="fundraiser-percentage">0%</p>
+            </div>
+        </section>
+        <section class="local-photos">
+            <div>
+                <img src="./images/caminito.jpg" alt="Caminito street in La Boca, Buenos Aires" loading="lazy">
+                <figcaption>Fig 1. Caminito is a famous street located in the La Boca neighborhood, known for its
+                    colorful buildings and tango dancers.</figcaption>
+            </div>
+            <div>
+                <img src="./images/obelisco.jpg" alt="El Obelisco in Buenos Aires" loading="lazy">
+                <figcaption>Fig 2. The Obelisk is one of Buenos Aires' most iconic landmarks, located at the
+                    intersection of 9 de Julio Avenue and Corrientes Avenue.</figcaption>
+            </div>
+            <div>
+                <img src="./images/teatro-colon.jpg" alt="Teatro Colón in Buenos Aires" loading="lazy">
+                <figcaption>Fig 3. Teatro Colón is one of the world's most famous opera houses, located in the heart of
+                    Buenos Aires.</figcaption>
+            </div>
+            <div>
+                <img src="./images/jardin-japones.jpg" alt="Japanese Garden in Buenos Aires" loading="lazy">
+                <figcaption>Fig 4. The Japanese Garden in Buenos Aires is a serene and beautiful space showcasing
+                    Japanese culture and horticulture.</figcaption>
+            </div>
+            <div>
+                <img src="./images/puerto-madero.jpg" alt="Puerto Madero in Buenos Aires" loading="lazy">
+                <figcaption>Fig 5. Puerto Madero is a trendy waterfront district in Buenos Aires, known for its upscale
+                    restaurants and stunning views.</figcaption>
+            </div>
+            <div>
+                <img src="./images/plaza-mayo.jpg" alt="Plaza de Mayo in Buenos Aires" loading="lazy">
+                <figcaption>Fig 6. Plaza de Mayo is one of the most historic and important squares in Buenos Aires,
+                    surrounded by landmarks like Casa Rosada.</figcaption>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="chamber-info">
+            <h2>Buenos Aires Chamber of Commerce</h2>
+            <p>14405 CR 355</p>
+            <p>Buenos Aires, Argentina</p>
+            <p>Buenos AiresChamber/gmail/org</p>
+            <p>555-555-5555</p>
+        </div>
+        <div class="socials">
+            <p>Stay tuned for Social Media updates!</p>
+        </div>
+        <div class="personal-info">
+            <h2>WDD231 Project</h2>
+            <p>Franco Cardenas</p>
+            <p>&copy;<span id="currentyear"></span> Franco Cardenas, Argentina</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
