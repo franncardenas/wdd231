@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standard Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You: Discover Bariloche</title>
+    <meta name="description"
+        content="Explore the natural beauty, culture, history, and traditions of Bariloche, Argentina.">
+    <meta name="author" content="Franco Cardenas">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph (OG) Meta Tags for Social Media -->
+    <meta property="og:title" content="Discover Bariloche">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/bariloche-preview.webp">
+    <meta property="og:url" content="https://franncardenas.github.io/wdd231/">
+    <meta property="og:description"
+        content="Experience the best of San Carlos de Bariloche: nature, activities, and more.">
+
+    <!-- Twitter Card for Better Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home: Discover Bariloche">
+    <meta name="twitter:description" content="Explore Bariloche's beauty, culture, and history.">
+    <meta name="twitter:image" content="images/bariloche-preview.webp">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img class="circle" src="images/bariloche-logo.png" alt="Discover Bariloche Logo">
+                <div>
+                    <h2>Discover Bariloche</h2>
+                    <p>Explore the Heart of Bariloche</p>
+                </div>
+            </div>
+
+            <nav id="main-menu" class="menu ">
+                <a class="active" href="index.html">Home</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="culture.html" title="Culture">Culture</a>
+                <a href="cuisine.html" title="Cuisine">Cuisine</a>
+                <a href="contact.html" title="Cuisine">Contact</a>
+            </nav>
+
+
+            <button id="menu-toggle" class="hamburger">☰</button>
+        </div>
+    </header>
+
+
+    <div style="text-align: center;">
+
+        <h1> Thank you for your interest in Bariloche.</h1>
+        <p> We are delighted to have you as part of our community!</p>
+        <p> Below are the details of your application:</p>
+    </div>
+    <main>
+        <div class="main-section">
+
+            <ul>
+                <li>
+                    <p><strong>Full Name:</strong> <span id="first-name"></span></p>
+                </li>
+                <li>
+                    <p><strong>Email:</strong> <span id="email"></span></p>
+                </li>
+                <li>
+                    <p><strong>Subject:</strong> <span id="subject"></span></p>
+                </li>
+                <li>
+                    <p><strong>Message:</strong> <span id="message"></span></p>
+                </li>
+                <li>
+                    <p><strong>Application Date:</strong> <span id="timestamp"></span></p>
+                </li>
+            </ul>
+            <a href="index.html">Return to Home</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content content-gridfooter">
+            <div class="cardfooter footer-info">
+                <p>Discover Bariloche<br>San Carlos de Bariloche, Río Negro, Argentina</p>
+                <p>Email: info@discoverbariloche.ar<br>Phone: +54 294 412-3456</p>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Youtube Icon">
+                    <img src="images/youtube-with-circle.svg" alt="Youtube Icon" width="36" height="32">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter Icon">
+                    <img src="images/twitter-logo.svg" alt="Twitter Icon" width="36" height="32">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram Icon">
+                    <img src="images/instagram-logo.svg" alt="Instagram Icon" width="36" height="32">
+                </a>
+                <button class="subscribe-btn" onclick="openModal()">Subscribe</button>
+            </div>
+
+            <div class="cardfooter">
+                <p><span id="currentYear"></span> 🌄 Discover Bariloche. All rights reserved.</p>
+                <p class="smaller" id="lastModified">Last Modified: 04/14/2025 12:00:00</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Parse URL parameters and display user input
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("first-name").innerText = params.get("first") || "N/A";
+        document.getElementById("email").innerText = params.get("email") || "N/A";
+        document.getElementById("subject").innerText = params.get("subject") || "N/A";
+        document.getElementById("message").innerText = params.get("message") || "N/A";
+        document.getElementById("timestamp").innerText = params.get("hiddendate") || "N/A";
+    </script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/discover.js"></script>
+
+</body>
+
+</html>

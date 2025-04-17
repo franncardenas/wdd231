@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Cerro Catedral",
+        "description": "One of South America's top ski resorts with breathtaking mountain views and winter sports.",
+        "location": "Bariloche",
+        "distance_km_from_center": 19,
+        "date": "Opened in 1936",
+        "image_url": "images/cerro_catedral.jpg"
+    },
+    {
+        "title": "Civic Center",
+        "description": "An iconic landmark in Bariloche, known for its alpine architecture and historical significance.",
+        "location": "Downtown Bariloche",
+        "distance_km_from_center": 0,
+        "date": "Inaugurated in 1940",
+        "image_url": "images/civic_center.jpg"
+    },
+    {
+        "title": "Cerro Otto",
+        "description": "A panoramic viewpoint accessible by cable car, offering 360° views and a rotating café.",
+        "location": "Bariloche",
+        "distance_km_from_center": 5,
+        "date": "Popular tourist site since the 1970s",
+        "image_url": "images/cerro_otto.jpg"
+    },
+    {
+        "title": "Nahuel Huapi Lake",
+        "description": "A glacial lake surrounded by forests and mountains, perfect for kayaking, sailing, and hiking.",
+        "location": "Bariloche",
+        "distance_km_from_center": 0,
+        "date": "Formed during the last Ice Age",
+        "image_url": "images/nahuel_huapi_lake.jpg"
+    },
+    {
+        "title": "Circuito Chico",
+        "description": "A scenic driving route showcasing Bariloche's lakes, forests, and stunning viewpoints.",
+        "location": "Llao Llao Area",
+        "distance_km_from_center": 25,
+        "date": "Tourist route established mid-20th century",
+        "image_url": "images/circuito_chico.jpg"
+    },
+    {
+        "title": "Llao Llao Hotel",
+        "description": "A luxury hotel nestled between lakes and mountains, known for its architecture and elegance.",
+        "location": "Llao Llao",
+        "distance_km_from_center": 25,
+        "date": "Opened in 1938",
+        "image_url": "images/llao_llao_hotel.jpg"
+    },
+    {
+        "title": "Colonia Suiza",
+        "description": "A historic Swiss settlement with artisan markets, traditional foods, and nature trails.",
+        "location": "West of Bariloche",
+        "distance_km_from_center": 25,
+        "date": "Founded in the late 1800s",
+        "image_url": "images/colonia_suiza.jpg"
+    },
+    {
+        "title": "Cerro Campanario",
+        "description": "Famous for one of the best views in the world, accessible by chairlift.",
+        "location": "Km 17, Avenida Bustillo",
+        "distance_km_from_center": 17,
+        "date": "Tourist attraction since 1950s",
+        "image_url": "images/cerro_campanario.jpg"
+    },
+    {
+        "title": "Puerto Blest & Los Cántaros Falls",
+        "description": "A boat trip destination with lush landscapes and a hike to scenic waterfalls.",
+        "location": "Nahuel Huapi National Park",
+        "distance_km_from_center": 35,
+        "date": "Part of protected area since 1934",
+        "image_url": "images/puerto_blest.jpg"
+    },
+    {
+        "title": "Chocolate Museum",
+        "description": "A museum dedicated to Bariloche’s famous chocolate culture, with tastings and history.",
+        "location": "Downtown Bariloche",
+        "distance_km_from_center": 0,
+        "date": "Opened in 2011",
+        "image_url": "images/chocolate_museum.jpg"
+    }
+]

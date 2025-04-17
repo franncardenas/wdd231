@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta estándar -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture: Discover Bariloche</title>
+    <meta name="description"
+        content="Explore the natural beauty, history, and landscapes of Bariloche, in Argentine Patagonia.">
+    <meta name="author" content="Franco Cardenas">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph (OG) Meta Tags para redes sociales -->
+    <meta property="og:title" content="Discover Bariloche">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/bariloche-preview.webp">
+    <meta property="og:url" content="https://franncardenas.github.io/wdd231/">
+    <meta property="og:description"
+        content="Explore the best tourist attractions, activities, and natural landscapes in Bariloche, Patagonia.">
+
+    <!-- Twitter Card para una mejor compartición en redes sociales -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home: Discover Bariloche">
+    <meta name="twitter:description" content="Discover the natural beauty of Bariloche and its tourist attractions.">
+    <meta name="twitter:image" content="images/bariloche-preview.webp">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img class="circle" src="images/bariloche-logo.png" alt="Logo Discover Bariloche">
+                <div>
+                    <h2>Discover Bariloche</h2>
+                    <p>Explore Argentine Patagonia</p>
+                </div>
+            </div>
+
+            <nav id="main-menu" class="menu ">
+                <a href="index.html">Home</a>
+                <a href="attractions.html">Attractions</a>
+                <a class="active" href="culture.html" title="Culture">Culture</a>
+                <a href="contact.html" title="Contact">Contact</a>
+            </nav>
+
+            <button id="menu-toggle" class="hamburger">☰</button>
+        </div>
+    </header>
+
+    <!-- Sección Cultura -->
+    <section class="section bg-light py-5">
+        <div class="container">
+            <h1 class="disconj text-center mb-4">Cultura</h1>
+            <p class="text-center">
+                Bariloche's culture is a unique blend of indigenous and European traditions, reflected in its
+                architecture, music, and celebrations. Bariloche, located in Argentine Patagonia, is known for its
+                stunning landscapes of mountains, lakes, and forests, but also for its rich cultural history.
+            </p>
+            <p class="text-center">
+                Art and music are fundamental to Bariloche life. Festivals, such as the National Snow Festival,
+                celebrate the arrival of winter with parades and music. Furthermore, the local cuisine, with a strong
+                Swiss and German influence, is known for its chocolates and typical regional dishes.
+            </p>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="cardj">
+                        <img data-src="images/musica.jpg" src="images/musica.jpg" class="card-img-top"
+                            alt="Music concert in Bariloche" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Music</h5>
+                            <p class="card-text">Discover the music of Bariloche, from folklore to modern melodies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cardj">
+                        <img data-src="images/dance.jpg" src="images/dance.jpg" class="card-img-top"
+                            alt="Danza tradicional en Bariloche" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Danza</h5>
+                            <p class="card-text">Explore the traditional dances that are part of the region's cultural
+                                identity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="cardj">
+                        <img data-src="images/festival.jpg" src="images/festival.jpg" class="card-img-top"
+                            alt="Festival in Bariloche" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Festivals</h5>
+                            <p class="card-text">Enjoy festivals that celebrate the culture and history of Bariloche.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 align-items-center">
+                <div class="col-md-6">
+                    <h2>Traditional clothing</h2>
+                    <p>Bariloche's traditional attire includes garments adapted to its cold climate, such as ponchos and
+                        scarves. European influences are also reflected in local fashion, especially in the costumes
+                        worn during festivals.</p>
+                </div>
+                <div class="col-md-6">
+                    <img data-src="images/ropa.jpg" src="images/ropa.jpg" alt="Traditional clothing from Bariloche"
+                        class="img-fluid" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content content-gridfooter">
+            <div class="cardfooter footer-info">
+                <p>Discover Bariloche<br>San Carlos de Bariloche, Río Negro, Argentina</p>
+                <p>Email: info@discoverbariloche.ar<br>Phone: +54 294 412-3456</p>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Youtube Icon">
+                    <img src="images/youtube-with-circle.svg" alt="Youtube Icon" width="36" height="32">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter Icon">
+                    <img src="images/twitter-logo.svg" alt="Twitter Icon" width="36" height="32">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram Icon">
+                    <img src="images/instagram-logo.svg" alt="Instagram Icon" width="36" height="32">
+                </a>
+                <button class="subscribe-btn" onclick="openModal()">Subscribe</button>
+            </div>
+
+            <div class="cardfooter">
+                <p><span id="currentYear"></span> 🌄 Discover Bariloche. All rights reserved.</p>
+                <p class="smaller" id="lastModified">Last Modified: 04/14/2025 12:00:00</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/discover.js"></script>
+
+</body>
+
+</html>

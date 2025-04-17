@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standard Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions: Discover Bariloche</title>
+    <meta name="description" content="Explore Bariloche's rich culture, history, landscapes, and traditions.">
+    <meta name="author" content="Franco Cardenas">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph (OG) Meta Tags for Social Media -->
+    <meta property="og:title" content="Discover Bariloche">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/bariloche-preview.webp">
+    <meta property="og:url" content="https://franncardenas.github.io/wdd231/">
+    <meta property="og:description"
+        content="Discover top cultural sites, historical landmarks, and tourist attractions in Bariloche.">
+
+    <!-- Twitter Card for Better Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home: Discover Bariloche">
+    <meta name="twitter:description" content="Explore Bariloche's beauty, culture, and history.">
+    <meta name="twitter:image" content="images/bariloche-preview.webp">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img class="circle" src="images/bariloche-logo.png" alt="Discover Bariloche Logo">
+                <div>
+                    <h2>Discover Bariloche</h2>
+                    <p>Explore the Heart of Bariloche</p>
+                </div>
+            </div>
+
+            <nav id="main-menu" class="menu ">
+                <a href="index.html">Home</a>
+                <a class="active" href="attractions.html">Attractions</a>
+                <a href="culture.html" title="Culture">Culture</a>
+                <a href="contact.html" title="Contact">Contact</a>
+            </nav>
+
+
+            <button id="menu-toggle" class="hamburger">☰</button>
+        </div>
+    </header>
+    <section class="section bg-light py-5">
+        <div class="container">
+            <h2 class="disconj text-center mb-4">Tourist Attractions</h2>
+            <p class="text-center">Bariloche offers a wide variety of tourist attractions that combine nature, history,
+                and culture. Cerro Catedral is ideal for skiing, while Circuito Chico and Lake Nahuel Huapi offer
+                breathtaking landscapes. The Civic Center reflects the city's history, and Nahuel Huapi National Park is
+                perfect for hiking and wildlife watching. You can also visit Colonia Suiza and try local delicacies like
+                artisanal chocolate. Whether in winter or summer, Bariloche has something unique for every visitor.</p>
+        </div>
+        <div class="main-section">
+            <div class="menu-byu">
+                <button id="grid" data-view="grid">Grid View</button>
+                <button id="list" data-view="list">List View</button>
+            </div>
+            <hr>
+            <div class="grid" id="members-container">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content content-gridfooter">
+            <div class="cardfooter footer-info">
+                <p>Discover Bariloche<br>San Carlos de Bariloche, Río Negro, Argentina</p>
+                <p>Email: info@discoverbariloche.ar<br>Phone: +54 294 412-3456</p>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Youtube Icon">
+                    <img src="images/youtube-with-circle.svg" alt="Youtube Icon" width="36" height="32">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter Icon">
+                    <img src="images/twitter-logo.svg" alt="Twitter Icon" width="36" height="32">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram Icon">
+                    <img src="images/instagram-logo.svg" alt="Instagram Icon" width="36" height="32">
+                </a>
+                <button class="subscribe-btn" onclick="openModal()">Subscribe</button>
+            </div>
+
+            <div class="cardfooter">
+                <p><span id="currentYear"></span> 🌄 Discover Bariloche. All rights reserved.</p>
+                <p class="smaller" id="lastModified">Last Modified: 04/14/2025 12:00:00</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/discover.js"></script>
+    <script src="scripts/attractions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Standard Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact: Discover Bariloche</title>
+    <meta name="description" content="Explore Bariloche's rich culture, history, landscapes, and traditions.">
+    <meta name="author" content="Franco Cardenas">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph (OG) Meta Tags for Social Media -->
+    <meta property="og:title" content="Discover Bariloche">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/bariloche-preview.webp">
+    <meta property="og:url" content="https://franncardenas.github.io/wdd231/">
+    <meta property="og:description"
+        content="Discover top cultural sites, historical landmarks, and tourist attractions in Bariloche.">
+
+    <!-- Twitter Card for Better Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home: Discover Bariloche">
+    <meta name="twitter:description" content="Explore Bariloche's beauty, culture, and history.">
+    <meta name="twitter:image" content="images/bariloche-preview.webp">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img class="circle" src="images/bariloche-logo.png" alt="Discover Bariloche Logo">
+                <div>
+                    <h2>Discover Bariloche</h2>
+                    <p>Explore the Heart of Bariloche</p>
+                </div>
+            </div>
+
+            <nav id="main-menu" class="menu ">
+                <a href="index.html">Home</a>
+                <a href="attractions.html">Attractions</a>
+                <a href="culture.html" title="Culture">Culture</a>
+                <a href="attractions.html">Attractions</a>
+                <a class="active" href="contact.html" title="Cuisine">Contact</a>
+            </nav>
+
+            <button id="menu-toggle" class="hamburger">☰</button>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="main-section">
+        <div class="container">
+            <h2 class="disconj section-title text-center">Contact Us</h2>
+            <p class="text-center">Got a question or need more information? Fill out the form below, and we'll get back
+                to you soon!</p>
+            <form id="contactForm" method="GET" action="thankyou.html" class="row g-3">
+
+                <div class="col-md-6">
+                    <label for="first" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="first" name="first" required placeholder="Your Name">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="col-md-12">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required placeholder="Subject">
+                </div>
+                <div class="col-md-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" rows="4" class="form-control" required
+                        placeholder="Your Message"></textarea>
+                </div>
+                <input type="hidden" name="hiddendate" id="timestamp">
+                <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="button" id="saveData" class="btn btn-secondary">Save Message</button>
+                </div>
+            </form>
+            <div id="output" class="mt-3 text-center"></div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content content-gridfooter">
+            <div class="cardfooter footer-info">
+                <p>Discover Bariloche<br>San Carlos de Bariloche, Río Negro, Argentina</p>
+                <p>Email: info@discoverbariloche.ar<br>Phone: +54 294 412-3456</p>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Youtube Icon">
+                    <img src="images/youtube-with-circle.svg" alt="Youtube Icon" width="36" height="32">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter Icon">
+                    <img src="images/twitter-logo.svg" alt="Twitter Icon" width="36" height="32">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram Icon">
+                    <img src="images/instagram-logo.svg" alt="Instagram Icon" width="36" height="32">
+                </a>
+                <button class="subscribe-btn" onclick="openModal()">Subscribe</button>
+            </div>
+
+            <div class="cardfooter">
+                <p><span id="currentYear"></span> 🌄 Discover Bariloche. All rights reserved.</p>
+                <p class="smaller" id="lastModified">Last Modified: 04/14/2025 12:00:00</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/discover.js"></script>
+
+</body>
+
+</html>
